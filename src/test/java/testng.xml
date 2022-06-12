@@ -1,0 +1,11 @@
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+
+<test thread-count="5" name="Test">
+	<classes>
+		<class name="testcases.LoginTest" />
+	</classes>
+
+</test> <!-- Test -->
