@@ -1,14 +1,15 @@
 version: '2'
 
 services:
-
-
-  mongo:
-    container_name: mongo
-    image: mongo
-    ports: 
-      - "27017:27017"
-  carts: att
+  carts_db :
+    image: 'mongo'
+    environment: 
+      - MONGO_INITDB_DATABASE=your-database-name data
+      - MONGO_INITDB_ROOT_USERNAME=
+      - MONGO_INITDB_ROOT_PASSWORD=
+    ports:
+       - "27017:27017"
+  carts:
     image: weaveworksdemos/carts
     hostname: carts
     restart: always
@@ -23,6 +24,8 @@ services:
       - reschedule=on-node-failure
       - ZIPKIN_HOST=zipkin
       - ZIPKIN_ENABLED=true
+    ports:
+      - "8081:80"
   zipkin:
     image: openzipkin/zipkin 
     hostname: zipkin
