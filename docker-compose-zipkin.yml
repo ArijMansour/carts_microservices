@@ -1,6 +1,10 @@
 version: '2'
 
 services:
+  spring_boot_mongo:
+    build: .
+    ports:
+      - "8080:80"
   carts:
     image: weaveworksdemos/carts
     hostname: carts
@@ -16,8 +20,8 @@ services:
       - reschedule=on-node-failure
       - ZIPKIN_HOST=zipkin
       - ZIPKIN_ENABLED=true
-    ports:
-      - "8081:80"
+      - SPRING_DATA_MONGODB_.HOST=mongo
+   
   zipkin:
     image: openzipkin/zipkin 
     hostname: zipkin
