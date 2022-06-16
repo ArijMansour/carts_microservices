@@ -3,8 +3,9 @@ version: '2'
 services:
   carts-db :
     image: 'mongo'
+    container_name: 'flamboyant_raman'
     environment: 
-      - MONGO_INITDB_DATABASE=your-database-name data
+      - MONGO_INITDB_DATABASE=data
       - MONGO_INITDB_ROOT_USERNAME=
       - MONGO_INITDB_ROOT_PASSWORD=
     ports:
