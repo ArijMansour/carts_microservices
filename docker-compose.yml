@@ -1,15 +1,6 @@
 version: '2'
 
 services:
-  carts-db :
-    image: 'mongo'
-    container_name: 'flamboyant_raman'
-    environment: 
-      - MONGO_INITDB_DATABASE=data
-      - MONGO_INITDB_ROOT_USERNAME=
-      - MONGO_INITDB_ROOT_PASSWORD=
-    ports:
-       - "27017:27017"
   carts:
     image: weaveworksdemos/carts
     hostname: carts
