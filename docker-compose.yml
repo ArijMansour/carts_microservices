@@ -1,6 +1,13 @@
 version: '2'
 
 services:
+  carts-db:
+    build: .
+    ports:
+      - "8081:80"
+    environment:
+      - SPRING_DATA_MONGODB_.HOST=mongo
+
   carts:
     image: weaveworksdemos/carts
     hostname: carts
