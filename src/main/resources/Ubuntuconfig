@@ -1,0 +1,50 @@
+/*congfig*/ 
+***************************************************Installations*****************************************************************
+
+#****************************************** docker instalation :😋️***************************************************************
+https://docs.docker.com/engine/install/ubuntu/ 
+Access Token : ab8c0bd0-5cc1-47cc-b77a-adf47c2e2c11
+sudo chmod 755 /usr/local/bin/docker-composesudo chmod 755 /usr/local/bin/docker-compose
+
+# ****************************************Maven + Jdk 11 installation **********************************************************
+https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-20-04/
+
+# ****************************************** Sts********************************************************************************* 
+https://www.youtube.com/watch?v=n8C9Lx0OVX4
+
+# *****************************************mongo db installation**************************************************************** 
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+sudo service mongod stop
+sudo service mongod start
+sudo service mongod status
+mongo_errors : 
+1/echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+
+2/sudo apt-get update
+
+3/sudo apt-get install libssl1.1
+
+*********************************************Jenkins installation************************************************************
+https://www.youtube.com/watch?v=CEyfsQq3QEM&t=146s
+arij@arij-virtual-machine:~$sudo service jenkins start
+arij@arij-virtual-machine:~$ sudo service jenkins status
+
+ 
+****************************************************ERRORS******************************************************************************
+
+# dpkg error :
+ps aux | grep -i apt
+sudo kill <process_id> (apt process)
+
+# ****************************************Git configuration + Token :********************************************************** 
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git Token : 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
+git status
+git add . 
+git commit -m 'message'
+git push -u origin master 
+
+********************************************commands****************************************************************************
+readlink -f $(which java)
+sudo chmod 666 /usr/local/bin/docker.sock
