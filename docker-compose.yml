@@ -8,8 +8,8 @@ services:
     ports:
       - "27017:27017"
   carts:
-    image: arijmansour/pfe-carts-microservices:13
-    hostname: pfe-carts-microservices
+    image: arijmansour/pfe_carts_microservices:$BUILD_NUMBER
+    hostname: pfe_carts_microservices
     restart: always
     ports:
       - "8081:80"

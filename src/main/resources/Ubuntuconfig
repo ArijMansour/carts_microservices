@@ -40,7 +40,7 @@ sudo kill <process_id> (apt process)
 # ****************************************Git configuration + Token :********************************************************** 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
-git Token : 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
+git Token : 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
 git status
 git add . 
 git commit -m 'message'
@@ -49,4 +49,6 @@ git push -u origin master
 ********************************************commands****************************************************************************
 readlink -f $(which java)
 sudo chmod 666 /var/run/docker.sock
+
+# docker-compose up 
 
