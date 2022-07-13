@@ -2,7 +2,7 @@ pipeline{
 /*some changes*/ 
 environment{
 		registry = 'arijmansour/pfe_carts_microservices'
-		registryCredential= 'DockerHub'
+		registryCredential= 'Dockerhub'
 		dockerImage = ''
 	}
     agent any
